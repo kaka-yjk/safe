@@ -13,7 +13,7 @@ Specifically, the textual content *“I love you”* delivers strong semantic cu
 
 ### Supplementary Experiments
 
-**Table 1** presents supplementary experimental results on the **CMU-MOSI** dataset, comparing SAFE with different prompt and backbone model variants.
+**Table 4** presents supplementary experimental results on the **CMU-MOSI** dataset, comparing SAFE with different prompt and backbone model variants.
 
 | Model / Setting | ACC-2 | F1 | ACC-7 | MAE | Corr |
 |-----------------|-------|----|-------|-----|------|
@@ -28,7 +28,7 @@ All experiments are conducted on the **CMU-MOSI** benchmark.
 
 ### Efficiency Comparison with SLM Baselines
 
-We further compare the computational efficiency of SAFE with a representative SLM-based baseline (**DLF**). The results are summarized in **Table 2**.
+We further compare the computational efficiency of SAFE with a representative SLM-based baseline (**DLF**). The results are summarized in **Table 5**.
 
 | Model | Trainable Parameters | Training Time | GPU Memory Usage |
 |-------|----------------------|---------------|------------------|
@@ -39,7 +39,7 @@ Compared to DLF, SAFE incurs moderately higher training time and memory consumpt
 
 ### Quantitative Analysis of RSA Mechanism
 
-To verify the effectiveness of the Rationale-Source Aligner (RSA), we monitor the cosine similarity between source modality features and rationale embeddings before and after RSA processing. The results are summarized in **Table 3**.
+To verify the effectiveness of the Rationale-Source Aligner (RSA), we monitor the cosine similarity between source modality features and rationale embeddings before and after RSA processing. The results are summarized in **Table 6**.
 
 | Modality | Pre-RSA Similarity | Post-RSA Similarity | Gain        |
 | -------- | ------------------ | ------------------- | ----------- |
@@ -50,7 +50,7 @@ To verify the effectiveness of the Rationale-Source Aligner (RSA), we monitor th
 
 ### Verification of Rationale Independence
 
-To address concerns regarding the independence of MLLM-generated rationales across modalities, we compute the pairwise cosine similarity of their BERT embeddings. The results are reported in **Table 4**.
+To address concerns regarding the independence of MLLM-generated rationales across modalities, we compute the pairwise cosine similarity of their BERT embeddings. The results are reported in **Table 7**.
 
 | Modality Pair       | Average Cosine Similarity |
 | ------------------- | ------------------------- |
