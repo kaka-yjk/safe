@@ -15,6 +15,7 @@ Specifically, the textual content *“I love you”* delivers strong semantic cu
 
 | Model / Setting | ACC-2 | F1 | ACC-7 | MAE | Corr |
 |-----------------|-------|----|-------|-----|------|
+| SAFE w/ Noisy Rationales | 82.01 | 82.09 | 44.75 | 0.768 | 0.775 |
 | SAFE w/ Prompt Variant | 86.28 | 86.21 | 47.38 | 0.712 | 0.797 |
 | SAFE w/ Qwen-Omni-Turbo | 85.98 | 85.94 | 46.50 | 0.699 | 0.798 |
 | Gemini-2.5-Pro | 86.06 | 85.99 | 43.92 | 0.791 | 0.772 |
