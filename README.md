@@ -36,3 +36,25 @@ We further compare the computational efficiency of SAFE with a representative SL
 | DLF | 112.4M | 5 min | 4.5 GB |
 
 Compared to DLF, SAFE incurs moderately higher training time and memory consumption due to the use of **two BERT encoders**. All efficiency comparisons are performed on the **CMU-MOSI** dataset.
+
+### Quantitative Analysis of RSA Mechanism
+
+To verify the effectiveness of the Rationale-Source Aligner (RSA), we monitor the cosine similarity between source modality features and rationale embeddings before and after RSA processing. The results are summarized in **Table 3**.
+
+| Modality | Pre-RSA Similarity | Post-RSA Similarity | Gain        |
+| -------- | ------------------ | ------------------- | ----------- |
+| Text     | 0.1062             | 0.3252              | +0.2190     |
+| Audio    | -0.0888            | 0.0499              | +0.1387     |
+| Video    | 0.0144             | 0.0591              | +0.0447     |
+
+
+### Verification of Rationale Independence
+
+To address concerns regarding the independence of MLLM-generated rationales across modalities, we compute the pairwise cosine similarity of their BERT embeddings. The results are reported in **Table 4**.
+
+| Modality Pair       | Average Cosine Similarity |
+| ------------------- | ------------------------- |
+| Text vs. Audio      | 0.8480                    |
+| Text vs. Vision     | 0.8372                    |
+| Audio vs. Vision    | 0.8430                    |
+| **Overall Average** | **0.8428**                |
