@@ -1,10 +1,8 @@
 ### Case Study
 
-We provide a representative case study, as illustrated in Figure 1.
+We provide a representative case study, as illustrated in Figure 3.
 
 ![Case Study Visualization](casestudy.png)
-
-#### Case Study Analysis
 
 The selection vector **[1, 0, 1]** indicates that only the **textual** and **visual** rationales are adopted, while the **audio** modality is excluded.  
 Specifically, the textual content *“I love you”* delivers strong semantic cues, and the visual signal *“wide smile”* conveys clear emotional evidence. In contrast, the audio modality lacks explicit emotional indicators in this instance, contributing limited additional information. Consequently, incorporating audio introduces redundancy rather than improving sentiment prediction, making text and vision the most informative modalities for this case.
